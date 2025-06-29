@@ -11,19 +11,46 @@
     />
   </head>
   <body>
-    <!-- <button onclick="showbalance()">show my balance</button>
-    <button onclick="depositfun()">deposit</button>
-    <button onclick="withdrawfun()">withdraw</button>
-    <button onclick="showmytransaction()">show transaction</button>
-    <button onclick="askuser()">ENTER</button>
-    <button onclick="deletefun()">DELETE</button> -->
-
-    <button class="btn btn-primary" onclick="showfatora()">Fator Value</button>
-    <button class="btn btn-primary" onclick="showitems()">Show Items</button>
-    <button class="btn btn-primary" onclick="itemsOfFatore()">Add Items</button>
-    <button class="btn btn-primary" onclick="deleteitems()">
-      delete Items
-    </button>
+    <div
+      class="col-12 d-flex justify-content-center align-items-center border shadow"
+      style="height: 100vh"
+    >
+      <div class="d-flex flex-column gap-3 border shadow p-5">
+        <h3 class="text-center">welcome to Bank account system</h3>
+        <button class="btn btn-primary" onclick="showbalance()">
+          show balance
+        </button>
+        <input
+          id="takeit"
+          type="text"
+          class="form-control"
+          placeholder="Enter the amount of Deposit"
+        />
+        <input
+          id="with"
+          type="text"
+          class="form-control"
+          placeholder="enter the amouunt of Withdraw"
+        />
+        <div class="d-flex flex-column gap-3 gap-lg-0 flex-lg-row justify-content-between">
+          <button class="col-12 col-lg-5 btn btn-dark" onclick="depositfun()">
+            Deposit
+          </button>
+          <button class="col-12 col-lg-5 btn btn-warning" onclick="withdrawfun()">
+            Withdraw
+          </button>
+        </div>
+        <button class="btn btn-danger" onclick="showtansaction()">
+          Show transaction history
+        </button>
+        <table class="table table-dark table-hover">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+        <p class="text-center border border-warning">click here</p>
+      </div>
+    </div>
+    <div class="px-3"></div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
